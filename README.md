@@ -1,9 +1,7 @@
 ## Go bash wrapper
 
 - Forwards CLI arguments to `/bin/bash`
-- Fails if there is `GO_SH_WRAPPER` variable defined as recursion
-  control variable
-
+- Adds `GO_SH_WRAPPER` environment variable 
 ## But, why?
 
 Amazon ssm-agent by default runs with `sh` command and such does

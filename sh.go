@@ -7,10 +7,6 @@ import (
 )
 
 func main() {
-  _, set := os.LookupEnv("GO_SH_WRAPPER")
-  if set {
-    os.Exit(0)
-  }
   env := append(os.Environ(),"GO_SH_WRAPPER=1")
   args := os.Args[1:]
   cmd := exec.Command("/bin/bash", args...)
